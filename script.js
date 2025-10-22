@@ -8,6 +8,7 @@ const weatherCondition = document.querySelector(".weatherCondition")
 const humidity = document.querySelector(".humidity")
 const visibility = document.querySelector(".visibility")
 const windSpeed = document.querySelector(".windSpeed")
+const error = document.querySelector(".error")
 
 const APIKEY = "268e216bb873fe6981ef5a08ae4506da";
 
@@ -36,7 +37,6 @@ async function getInfo(city) {
     let wc =  data.weather[0].main; 
     weatherCondition.innerHTML = "Weather condition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp " + wc
    
-
     if(wc === "Clear"){
        weatherIcon.innerHTML = "☀️"
       }
@@ -51,7 +51,10 @@ async function getInfo(city) {
       } 
 
   } else {
-    console.log("Please enter a city name");
+    error.classList.remove("remove")
+    setTimeout(() => {
+      error.classList.add("remove")
+    },900)
   }
 } 
 searchBtn.addEventListener("click", async () => {
@@ -65,4 +68,3 @@ input.addEventListener("keydown", async (e) => {
     input.value = "";
   }
 })
-
