@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 77);
+    height: 50px;
+}
+
+.mainNavCon{  
+     width: 40vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 9px; 
+}
+
+.logo{
+    border-radius: 9px;
+    background-color: rgb(48, 48, 88);
+    color: rgb(255, 249, 249);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px rgba(154, 130, 199, 0.904);
+    padding: 0px 8px;
+    font-size: 19px;
+    text-shadow: 2px 2px 2px rgba(104, 6, 184, 0.89);
+    border: 1px solid rgba(0, 0, 0, 0.336); 
+}
+  
+  
+.siBtn{
+    border: none; 
+  
+     
+}
+
+
+
+#inputt{ 
+      border-radius: 7px;
+    background-color: rgb(48, 48, 88);
+    color: rgb(255, 249, 249);
+    font-family: "Poppins", sans-serif;
+    font-weight: 450;
+    box-shadow: 0px 0px 4px rgba(131, 105, 179, 0.904);
+    padding: 3px 2px 3px 9px;
+    font-size: 13px;
+    text-shadow: 2px 2px 2px rgba(104, 6, 184, 0.89);
+    border: 1px solid rgba(0, 0, 0, 0.342); 
+
+}
+ #inputt::placeholder{
+        color: rgba(196, 196, 196, 0.897);
+     }
+ 
+#inputt:focus{
+    outline: none;
+}
+
+#searchBtn{
+      border-radius: 7px;
+    background-color: rgb(48, 48, 88);
+    color: rgb(255, 249, 249);
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    box-shadow: 0px 0px 3px rgba(130, 102, 184, 0.904);
+    padding: 3px 9px;
+    font-size: 13px;
+    text-shadow: 2px 2px 2px rgba(104, 6, 184, 0.89);
+    border: 1px solid rgba(0, 0, 0, 0.253); 
+    margin-left: 5px;
+}
+
+#searchBtn:hover{
+    font-size: 13.2px;  
+    color: white;
+}
+
+.contentCon{
+    display: flex;
+    justify-content: center;
+    width: 99.8vw;
+    height: 94vh;
+    margin: 0 auto;
+    background-image: url(pexels-brett-sayles-912364.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content{ 
+     background-color: rgba(91, 119, 197, 0.027); 
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+     
+.cwText{ 
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 540;
+    text-shadow : 2px 3px 2px rgba(0, 0, 0, 0.658);
+}
+
+.ctAndCountryName{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(243, 243, 255);
+    text-shadow: -2px 3px 2px rgb(0, 0, 0); 
+}
+
+.weatherIcon{
+    font-size: 42px;
+}
+
+.temperature{
+    color: rgb(255, 188, 65);
+    font-size: 50px;
+    font-weight: 700; 
+     font-family:    -apple-system,    sans-serif;  
+     text-shadow: -2px 2px 2px rgb(0, 0, 0); 
+    }
+    
+    .c{
+        color: rgb(243, 243, 255);  
+        display: inline-block;
+        transform: translate(-3px, -14px);
+        font-size: 30px;
+        font-weight: 700;
+        font-family:    -apple-system,    sans-serif;  
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753); 
+    }
+ 
+
+.right{ 
+    padding: 20px 10px 0 0; 
+    text-align:end;
+}
+
+.feelsLikeTemperature{
+    color: rgb(254, 251, 255);
+    font-size: 14px;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0); 
+}
+
+.humidity{
+    color: rgb(254, 251, 255);
+  font-size: 14px;
+  text-shadow: -1px 2px 4px rgb(0, 0, 0); 
+}
+.visibility{
+    color: rgb(254, 251, 255);
+    font-size: 14px;
+    text-shadow: -1px 2px 6px rgb(0, 0, 0); 
+}
+
+.windSpeed{
+    color: rgb(254, 251, 255);
+    font-size: 14px;
+    text-shadow: 1px 2px 8px rgb(0, 0, 0); 
+}
+
+.weatherCondition{
+    color: rgb(254, 251, 255); 
+    font-size: 14px;
+    text-shadow: -1px 2px 2px rgb(0, 0, 0); 
+}
+
+
+ 
+@media (max-width: 1130px){
+     .mainNavCon{
+        width: 50vw;
+     }
+     .content{
+        width: 50vw;
+        
+     }
+}
+@media (max-width: 900px){
+     .mainNavCon{
+        width: 60vw;
+     }
+     .content{
+        width: 60vw;
+
+     }
+}
+  @media (max-width: 430px){
+     .mainNavCon{
+        width: 90vw;
+        padding: 5px 0px; 
+     }
+     .content{
+        width: 90vw;
+        flex-direction: column;
+        height: 38vh;
+     }
+     .logo{
+        font-size: 18px; 
+        border-radius: 8px;
+        padding: 1px 8px;
+        box-shadow: 0px 0px 4px rgba(154, 130, 199, 0.699);
+     }
+     #inputt{
+        padding: 3px 0px 3px 7px;
+        font-size: 13px;
+        box-shadow: 0px 0px 2px rgba(131, 105, 179, 0.671);
+     }
+    
+     #searchBtn {
+        box-shadow: 0px 0px 3px rgba(129, 102, 184, 0.664);
+        padding : 3px 7px  ; 
+        margin-left: 4px;
+        font-size: 13px;
+     }
+     .right{
+        text-align: end;
+        padding-right: 0;
+     }
+
+}  
+ 
+@media (max-width: 375px){
+    .mainNavCon{
+        width: 93vw;
+
+    }
+     #inputt{
+        padding: 3px 0px 3px 7px;
+        font-size: 12px;
+     }
+     #searchBtn{
+        padding: 3px 7px ;  
+        font-size: 12px;
+     }
+     .logo{
+        font-size: 17px; 
+        border-radius: 8px;
+        padding: 1px 8px;
+     }
+}
+
+@media (max-width: 320px){
+     .mainNavCon{
+        width: 94vw;
+        padding: 5px 2px;
+    }
+     #inputt{
+        padding: 3px 0px 3px 7px;
+        font-size: 11px;
+     }
+     
+     #searchBtn{
+        padding: 3px 6px ; 
+        margin-left: 0; 
+        font-size: 11px;
+     }
+     .logo{
+        font-size: 16px; 
+        border-radius: 8px;
+        padding: 1px 7px;
+     }
+}
